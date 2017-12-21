@@ -1,0 +1,19 @@
+@import 'css/theme-header-comment.css';
+@import 'css/wordpress-core.css';
+
+.row:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.site-footer{
+    height: 50px;
+    position: absolute;
+        bottom:0;
+    width: 100%;
+}
+.wrapper{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+}
