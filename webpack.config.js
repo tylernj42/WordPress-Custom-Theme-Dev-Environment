@@ -2,7 +2,6 @@ var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var LiveReloadPlugin = require('webpack-livereload-plugin');
 var inProduction = (process.env.NODE_ENV === 'production');
 var themeFolderName = 'custom-theme';
 
@@ -51,7 +50,6 @@ module.exports = {
             [ {from: 'theme',} ],
             { ignore: ['*.scss', '*.css', '*.js'] }
         ),
-        new LiveReloadPlugin()
     ],
     stats: {
         colors: true
